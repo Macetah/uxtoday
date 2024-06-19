@@ -1,9 +1,15 @@
+.background {
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+}
+
 /* hero */
 
 .hero-container {
     margin: 0;
     padding: 0;
-    background: repeating-conic-gradient(#434B78 0% 15deg, #fcf0c8 15deg 30deg);
+    background: repeating-conic-gradient(#28549c 0% 15deg, #fcf0c8 15deg 30deg);
     text-align: justify;
     padding-bottom: 3rem;
 }
@@ -47,6 +53,7 @@ hr {
     font-size: 92px;
     color: #2c2f77;
     -webkit-text-stroke: 3px white;
+    text-shadow: 0;
 }
 
 .fixed-title::after {
@@ -57,6 +64,7 @@ hr {
     color: #2c2f77; 
     -webkit-text-stroke: 0;
     pointer-events: none;
+    text-shadow: 0;
 }
 
 
@@ -296,11 +304,11 @@ hr {
 .prize-text h1 {
     text-align: center;
     text-shadow:
-    1px 1px 0 white,
-    -1px -1px 0 white,  
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
+    3px 3px 0 white,
+    -3px -3px 0 white,  
+    3px -3px 0 white,
+    -3px 3px 0 white,
+    3px 3px 0 white;
 }
 
 .juara-1, .juara-2, .juara-3, .best-innovation {
@@ -337,4 +345,9 @@ hr {
 
 .best-innovation {
     transform: translateX(300%);
+}
+
+.tent {
+    width: 100%;
+    height: auto;
 }
