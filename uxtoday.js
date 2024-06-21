@@ -21,15 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
         );
     }
 
-    function showItems() {
-        items.forEach(item => {
-            if (isInViewport(item)) {
-                item.style.opacity = '1';
-                item.style.transform = 'translateX(0)';
-            }
-        });
-    }
-
     showItems();
     window.addEventListener('scroll', showItems)
 
