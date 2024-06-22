@@ -1,9 +1,3 @@
-.background {
-    z-index: -1;
-    margin: 0;
-    padding: 0;
-}
-
 /* hero */
 
 .hero-container {
@@ -24,7 +18,23 @@ hr {
     background-color: white;
 }
 
+@media screen and (max-width: 1366px) {
+    .hero-container {
+        padding-bottom: 5rem;
+    }
+}
 
+@media screen and (max-width: 1536px) {
+    .hero-container {
+        padding-bottom: 23rem;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .hero-container {
+        padding-bottom: 23.8rem;
+    }
+}
 
 
 /* Title */
@@ -81,10 +91,6 @@ hr {
     margin-left: 35rem;
 }
 
-.title-container h1{
-    font-size: 6rem;
-    margin-bottom: 0.8rem;
-}
 
 .title-container p{
     font-size: 1.25rem;
@@ -140,6 +146,57 @@ hr {
 }
 
 
+@media screen and (max-width: 1366px) {
+    .button-container {
+        width: 200%;
+    }
+    
+    .title-text {
+        margin-left: 30rem;
+        margin-right: 5rem;
+    }
+
+    .image-container {
+        margin-top: 14rem;
+        scale: 1;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .button-container {
+        width: 200%;
+    }
+
+    .title-text {
+        margin-left: 30rem;
+        margin-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .image-container {
+        margin-top: 13rem;
+        scale: 1;
+    }
+    
+}
+
+@media screen and (max-width: 1600px) {
+    .image-container {
+        margin-top: 12rem;
+        scale: 1;
+    }    
+}
+
+@media screen and (max-width: 2560px) {
+    .image-container {
+        scale: 0.8;
+    }
+    
+    .title-text {
+        margin-top: 25rem;
+    }
+}
 
 
 
@@ -154,7 +211,6 @@ hr {
     position: absolute;
     z-index: 1;
     transform: translate(0, 10%) scaleX(-1);
-
 }
 
 .timeline-container {
@@ -335,6 +391,141 @@ hr {
     scale: 0.80;
 }
 
+@media screen and (max-width: 1366px) {
+    .scroller-wrapper {
+        scale: 0.8;
+    }
+
+    .middle-light1 {
+        transform: translate(215%, 10%);
+        scale: 0.9;
+    }
+
+    .middle-light2 {
+        transform: translate(-7%, 10%) scaleX(-1);
+        scale: 0.9;
+    }
+
+    .phone3 {
+        scale: 0.1;
+        transform: translate(-300%, -510%) rotate(10deg);
+    }
+
+    .firework3 {
+        transform: translate(30%, -90%) rotate(20deg);
+        scale: 0.60;
+    }
+
+    .phone-1 {
+        scale: 0.5;
+        transform: translate(-35%, -300%) rotate(15deg);
+    }
+
+    .phone-2 {
+        scale: 0.5;
+        transform: translate(-10%, 40rem) rotate(-15deg);
+    }
+
+    .light3 {
+        transform: translate(63%, 28%);
+        scale: 1.5;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .middle-light1 {
+        transform: translate(10%, 20%);
+        scale: 0.9;
+    }    
+}
+
+@media screen and (max-width: 1600px){
+    .middle-light1 {
+        transform: translate(268%, 10%);
+        scale: 0.9;
+    }
+    
+    .middle-light2 {
+        transform: translate(-7%, 10%) scaleX(-1);
+        scale: 0.9;
+    }
+    
+    .phone-3 {
+        scale: 0.7;
+        transform: translate(5%, -5rem) rotate(10deg);
+    }
+
+    .phone-1 {
+        scale: 0.7;
+        transform: translate(-20%, 6rem) rotate(15deg);
+    }
+
+    .phone-2 {
+        scale: 0.7;
+        transform: translate(-10%,25rem) rotate(-15deg);
+    }
+
+    .light3 {
+        transform: translate(75%, 28%);
+        scale: 1.5;
+    }
+
+    .scroller-wrapper {
+        max-width: 80rem;
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .scroller-wrapper {
+        scale: 0.9;
+    }
+
+    .middle-light1 {
+        transform: translate(215%, 10%);
+        scale: 0.9;
+    }
+
+    .middle-light2 {
+        transform: translate(-7%, 10%) scaleX(-1);
+        scale: 0.9;
+    }
+
+    .phone-3 {
+        scale: 0.7;
+        transform: translate(5%, -5rem) rotate(10deg);
+    }
+
+    .phone-1 {
+        scale: 0.6;
+        transform: translate(-20%, 6rem) rotate(15deg);
+    }
+
+    .phone-2 {
+        scale: 0.6;
+        transform: translate(-10%, 40rem) rotate(-15deg);
+    }
+
+    .light3 {
+        transform: translate(75%, 28%);
+        scale: 1.5;
+    }
+    
+}
+
+@media screen and (max-width: 2560px) {
+    .middle-light1 {
+        transform: translate(440%, 10%);
+    }
+
+    .light3 {
+        transform: translate(145%, 28%);
+        scale: 1.5;
+    }
+
+    .phone-2 {
+        transform: translate(15%, 10rem) rotate(-15deg);
+    }
+}
 
 
 
@@ -400,18 +591,80 @@ hr {
     position: absolute;
     width: 100%;
     height: auto;
-    transform: translateY(-60%);
+    transform: translateY(-60.2%);
     z-index: 0;
 }
 
 .bottom-light1 {
     position: absolute;
     z-index: 1;
-    transform: translate(300%, -32.5%);
+    transform: translate(300%, -32.15%);
 }
 
 .bottom-light2 {
     position: absolute;
     z-index: 1;
-    transform: translate(0, -32.5%) scaleX(-1);
+    transform: translate(0, -32.15%) scaleX(-1);
+}
+
+@media screen and (max-width: 1366px) {
+    .bottom-light1 {
+        transform: translate(205%, -50%);
+        scale: 0.95;
+    }
+
+    .bottom-light2 {
+        transform: translate(-4%, -50%) scaleX(-1);
+        scale: 0.95;
+    }
+
+    .tent {
+        transform: translateY(-55%);
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .tent {
+        transform: translateY(-57.5%);
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .bottom-light1 {
+        transform: translate(205%, -45.5%);
+        scale: 0.95;
+    }
+
+    .bottom-light2 {
+        transform: translate(-4%, -45.5%) scaleX(-1);
+        scale: 0.95;
+    }
+    
+}
+
+@media screen and (max-width: 1600px) {
+    .bottom-light1 {
+        transform: translate(256%, -43.5%);
+        scale: 0.95;
+    }
+
+    .bottom-light2 {
+        transform: translate(-4%, -43.5%) scaleX(-1);
+        scale: 0.95;
+    }    
+}
+
+@media screen and (max-width: 2560px) {
+    .tent {
+        scale: 0.8;
+        transform: translateY(-75.5%);
+    }
+    
+    .bottom-light1 {
+        transform: translate(440%, -32.35%);
+    }
+
+    .bottom-light2 {
+        transform: translate(0, -32.35%) scaleX(-1);
+    }
 }
