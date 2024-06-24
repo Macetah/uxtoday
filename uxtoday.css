@@ -1,670 +1,729 @@
 /* hero */
 
 .hero-container {
-    margin: 0;
-    padding: 0;
-    background: repeating-conic-gradient(#28549c 0% 15deg, #fcf0c8 15deg 30deg);
-    text-align: justify;
-    padding-bottom: 28.6rem;
+  margin: 0;
+  padding: 0;
+  background: repeating-conic-gradient(#28549c 0% 15deg, #fcf0c8 15deg 30deg);
+  text-align: justify;
+  padding-bottom: 21rem;
 }
 
-.hero-container h1, h2, h3, h4, p, a, ul, li, div {
-    font-family: Inter;
-    text-shadow: rgba(0, 0, 0, 0.192) 0 5px 5px;
+.hero-container h1,
+h2,
+h3,
+h4,
+p,
+a,
+ul,
+li,
+div {
+  font-family: Inter;
+  text-shadow: rgba(0, 0, 0, 0.192) 0 5px 5px;
 }
 
 hr {
-    height: 0.25rem;
-    background-color: white;
+  height: 0.25rem;
+  background-color: white;
 }
 
-@media screen and (max-width: 1366px) {
-    .hero-container {
-        padding-bottom: 5rem;
-    }
+@media screen and (min-width: 1366px) {
+  .hero-container {
+    padding-bottom: 23rem;
+  }
 }
 
-@media screen and (max-width: 1536px) {
-    .hero-container {
-        padding-bottom: 23rem;
-    }
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    padding-bottom: 23rem;
+  }
 }
 
-@media screen and (max-width: 1600px) {
-    .hero-container {
-        padding-bottom: 23.8rem;
-    }
+@media screen and (min-width: 1536px) {
+  .hero-container {
+    padding-bottom: 23rem;
+  }
 }
 
+@media screen and (min-width: 1600px) {
+  .hero-container {
+    padding-bottom: 23.8rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .hero-container {
+    padding-bottom: 29.8rem;
+  }
+}
 
 /* Title */
 
 .title-container {
-    padding: 1.25rem;
-    color: #2D3250;
-    font-family: Inter;
-    font-weight: bolder;
-    margin-bottom: 5rem;
-    padding: 0;
-    display: flex;
-    
+  padding: 1.25rem;
+  color: #2d3250;
+  font-family: Inter;
+  font-weight: bolder;
+  margin-bottom: 5rem;
+  padding: 0;
+  display: flex;
 }
 
 .fixed-title {
-    position: relative;
-    font-family: 'Arial', sans-serif;
-    font-size: 92px;
-    color: #2c2f77;
-    -webkit-text-stroke: 3px white;
-    text-shadow: 0 0 0;
+  position: relative;
+  font-family: "Arial", sans-serif;
+  font-size: 92px;
+  color: #2c2f77;
+  -webkit-text-stroke: 3px white;
+  text-shadow: 0 0 0;
 }
 
 .fixed-title::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #2c2f77; 
-    -webkit-text-stroke: 0;
-    pointer-events: none;
-    text-shadow: 0;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #2c2f77;
+  -webkit-text-stroke: 0;
+  pointer-events: none;
+  text-shadow: 0;
 }
 
-
-.title-container p, h2, h3 {
-    text-shadow: 
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
+.title-container p,
+h2,
+h3 {
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
 }
-.image-container img{
-    margin-top: 0;
-    margin-left: 8rem;
-    width: 225%;
-    height: auto;
+.image-container img {
+  margin-top: 0;
+  margin-left: 8rem;
+  width: 225%;
+  height: auto;
 }
 
 .title-text {
-    margin-right: 10rem;
-    margin-top: 14rem;
-    margin-left: 35rem;
+  margin-right: 10rem;
+  margin-left: 35rem;
+  margin-top: 15rem;
 }
 
-
-.title-container p{
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+.title-container p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .title-container h2 {
-    font-size: 2rem;
-    margin-bottom:1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .price-container {
-    display: flex;
-    margin-bottom: 0.5rem;
+  display: flex;
+  margin-bottom: 0.5rem;
 }
 
-.price-container h3:nth-child(2){
-    margin-left: 2.813rem;
+.price-container h3:nth-child(2) {
+  margin-left: 2.813rem;
 }
 
 .button-container {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    
+  font-size: 1.25rem;
+  margin-top: 1rem;
 }
 
 .button-container a {
-    text-shadow: 0 0 0;
+  text-shadow: 0 0 0;
 }
 
 .button-container a:nth-child(2) {
-    margin-left: 2.813rem;
+  margin-left: 2.813rem;
 }
 
 .custom-button {
-    display: inline-block;
-    background-color: #E3E7F1;
-    color: #1d2243;
-    width: 240px;
-    border: none;
-    border-radius: 16px;
-    padding: 10px 20px;
-    font-weight: bolder;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    text-align: center;
-    text-decoration: none;
+  display: inline-block;
+  background-color: #e3e7f1;
+  color: #1d2243;
+  width: 240px;
+  border: none;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  text-decoration: none;
 }
 
 .custom-button:hover {
-    background-color: #6c7078;
-    color: #fff;
+  background-color: #6c7078;
+  color: #fff;
 }
 
+@media screen and (min-width: 1366px) {
+  .button-container {
+    width: 200%;
+  }
 
-@media screen and (max-width: 1366px) {
-    .button-container {
-        width: 200%;
-    }
-    
-    .title-text {
-        margin-left: 30rem;
-        margin-right: 5rem;
-    }
+  .title-text {
+    margin-left: 30rem;
+    margin-right: 5rem;
+  }
 
-    .image-container {
-        margin-top: 14rem;
-        scale: 1;
-    }
+  .image-container {
+    margin-top: 15rem;
+    scale: 1;
+  }
 }
 
-@media screen and (max-width: 1440px) {
-    .button-container {
-        width: 200%;
-    }
+@media screen and (min-width: 1440px) {
+  .image-container {
+    margin-top: 15rem;
+    scale: 1;
+  }
 
-    .title-text {
-        margin-left: 30rem;
-        margin-right: 5rem;
-    }
+  .button-container {
+    width: 200%;
+  }
+
+  .title-text {
+    margin-left: 30rem;
+    margin-right: 5rem;
+  }
 }
 
-@media screen and (max-width: 1536px) {
-    .image-container {
-        margin-top: 13rem;
-        scale: 1;
-    }
-    
+@media screen and (min-width: 1536px) {
+  .image-container {
+    margin-top: 13rem;
+    scale: 1;
+  }
 }
 
-@media screen and (max-width: 1600px) {
-    .image-container {
-        margin-top: 12rem;
-        scale: 1;
-    }    
+@media screen and (min-width: 1600px) {
+  .image-container {
+    margin-top: 12rem;
+    scale: 1;
+  }
 }
 
-@media screen and (max-width: 2560px) {
-    .image-container {
-        scale: 0.8;
-    }
-    
-    .title-text {
-        margin-top: 25rem;
-    }
+@media screen and (min-width: 1920px) {
+  .image-container {
+    margin-top: 0rem;
+    scale: 0.7;
+  }
 }
 
+@media screen and (min-width: 2560px) {
+  .image-container {
+    scale: 0.8;
+    margin-top: 4rem;
+  }
 
+  .title-text {
+    margin-top: 15rem;
+  }
+}
+
+@media screen and (min-width: 4096px) {
+}
 
 /* Timeline */
 .middle-light1 {
-    position: absolute;
-    z-index: 1;
-    transform: translate(300%, 10%);
+  position: absolute;
+  z-index: 1;
+  transform: translate(250%, 10%);
 }
 
 .middle-light2 {
-    position: absolute;
-    z-index: 1;
-    transform: translate(0, 10%) scaleX(-1);
+  position: absolute;
+  z-index: 1;
+  transform: translate(0, 10%) scaleX(-1);
 }
 
 .timeline-container {
-    margin-top: 19rem;
+  margin-top: 19rem;
 }
 
 .timeline-text {
-    text-align: center;
+  text-align: center;
 }
 
-.timeline-text h1{
-    font-size: 5rem;
+.timeline-text h1 {
+  font-size: 5rem;
 }
 
-.timeline-text h4{
-    margin-top: 2rem;
-    font-size: 2rem;
+.timeline-text h4 {
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
-.timeline-text a{
-    margin-top: 1.5rem;
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+.timeline-text a {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
-
 
 .custom-button2 {
-    display: inline-block;
-    background-color: #434B78;
-    color: #E3E7F1;
-    width: 240px;
-    border: white solid 2px;
-    border-radius: 16px;
-    padding: 10px 20px;
-    font-weight: bolder;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border 0.3s;
-    text-align: center;
-    text-decoration: none;
+  display: inline-block;
+  background-color: #434b78;
+  color: #e3e7f1;
+  width: 240px;
+  border: white solid 2px;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  text-align: center;
+  text-decoration: none;
 }
 
 .custom-button2:hover {
-    background-color: #6875c0;
-    border: white solid 2px;
+  background-color: #6875c0;
+  border: white solid 2px;
 }
 
 /* Goofy ahh scroller */
 .scroller-wrapper {
-    z-index: 2;
-    position: relative;
-    max-width: 100rem;
-    padding: 2rem 0;
-    margin: 0 auto;
-    overflow: hidden;
-    background-color: #414767;
-    border-radius: 8px;
-    border: #d9d9d9 solid 2px;;
+  z-index: 2;
+  position: relative;
+  max-width: 100rem;
+  padding: 2rem 0;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #414767;
+  border-radius: 8px;
+  border: #d9d9d9 solid 2px;
 }
 
 .scroller-wrapper::before,
 .scroller-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 5rem;
-    pointer-events: none;
-    opacity: 1;
-    transition: opacity 0.3s;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5rem;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .scroller-wrapper::before {
-    left: 0;
-    background: linear-gradient(to right, #414767, rgba(29, 34, 67, 0));
+  left: 0;
+  background: linear-gradient(to right, #414767, rgba(29, 34, 67, 0));
 }
 
 .scroller-wrapper::after {
-    right: 0;
-    background: linear-gradient(to left, #414767, rgba(29, 34, 67, 0));
+  right: 0;
+  background: linear-gradient(to left, #414767, rgba(29, 34, 67, 0));
 }
 
 .scroller-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 1rem 0;
 }
 
 .timeline-text h1 {
-    margin-bottom: 2rem;
-    text-align: center;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .scroller-container::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .timeline-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 44.25rem;
-    height: 10rem;
-    font-size: 3.75rem;
-    font-weight: bolder;
-    color: #1d2243;
-    background-color: #E3E7F1;
-    border: 1px solid #1d2243;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
-    text-align: center;
-    margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44.25rem;
+  height: 10rem;
+  font-size: 3.75rem;
+  font-weight: bolder;
+  color: #1d2243;
+  background-color: #e3e7f1;
+  border: 1px solid #1d2243;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  text-align: center;
+  margin: 0 2rem;
 }
 
 .tag-list {
-    list-style: none;
-    padding: 0 25%;
-    margin: 0;
-    display: flex;
+  list-style: none;
+  padding: 0 25%;
+  margin: 0;
+  display: flex;
 }
 
-.event-name .event-date{
-    font: Inter;
+.event-name .event-date {
+  font: Inter;
 }
 
-.event-date{
-    font-size: 1.25rem;
-    margin-top: 1rem;
+.event-date {
+  font-size: 1.25rem;
+  margin-top: 1rem;
 }
 
 .phone1 {
-    position: absolute;
-    z-index: 1;
-    scale: 0.2;
-    transform: translate(-150%, -200%) rotate(15deg);
+  position: absolute;
+  z-index: 1;
+  scale: 0.2;
+  transform: translate(-150%, -200%) rotate(15deg);
 }
 
 .firework1 {
-    position: absolute;
-    transform: translate(20%, -25%) rotate(20deg);
+  position: absolute;
+  transform: translate(20%, -25%) rotate(20deg);
 }
 
 .phone2 {
-    position: absolute;
-    z-index: 1;
-    scale: 0.2;
-    transform: translate(130%, -120%) rotate(-15deg);
+  position: absolute;
+  z-index: 1;
+  scale: 0.2;
+  transform: translate(130%, -120%) rotate(-15deg);
 }
 
 .firework2 {
-    position: absolute;
-    transform: translate(200%, 10%) rotate(-20deg);
+  position: absolute;
+  transform: translate(200%, 10%) rotate(-20deg);
 }
 
 .light3 {
-    position: absolute;
-    z-index: 1;
-    transform: translate(100%, 28%);
-    scale: 1.5;
+  position: absolute;
+  z-index: 1;
+  transform: translate(100%, 28%);
+  scale: 1.5;
 }
 
-
 .phone3 {
-    position: absolute;
-    z-index: 1;
-    scale: 0.15;
-    transform: translate(-200%, -350%) rotate(10deg);
+  position: absolute;
+  z-index: 1;
+  scale: 0.15;
+  transform: translate(-200%, -350%) rotate(10deg);
 }
 
 .firework3 {
-    position: absolute;
-    transform: translate(20%, -70%) rotate(20deg);
-    scale: 0.80;
+  position: absolute;
+  transform: translate(20%, -70%) rotate(20deg);
+  scale: 0.8;
 }
 
-@media screen and (max-width: 1366px) {
-    .scroller-wrapper {
-        scale: 0.8;
-    }
+@media screen and (min-width: 1366px) {
+  .scroller-wrapper {
+    scale: 0.8;
+  }
 
-    .middle-light1 {
-        transform: translate(215%, 10%);
-        scale: 0.9;
-    }
+  .middle-light1 {
+    transform: translate(215%, 10%);
+    scale: 0.9;
+  }
 
-    .middle-light2 {
-        transform: translate(-7%, 10%) scaleX(-1);
-        scale: 0.9;
-    }
+  .middle-light2 {
+    transform: translate(-7%, 10%) scaleX(-1);
+    scale: 0.9;
+  }
 
-    .phone3 {
-        scale: 0.1;
-        transform: translate(-300%, -510%) rotate(10deg);
-    }
+  .phone3 {
+    scale: 0.1;
+    transform: translate(-300%, -510%) rotate(10deg);
+  }
 
-    .firework3 {
-        transform: translate(30%, -90%) rotate(20deg);
-        scale: 0.60;
-    }
+  .firework3 {
+    transform: translate(30%, -90%) rotate(20deg);
+    scale: 0.6;
+  }
 
-    .phone-1 {
-        scale: 0.5;
-        transform: translate(-35%, -300%) rotate(15deg);
-    }
+  .phone-1 {
+    scale: 0.5;
+    transform: translate(-35%, -300%) rotate(15deg);
+  }
 
-    .phone-2 {
-        scale: 0.5;
-        transform: translate(-10%, 40rem) rotate(-15deg);
-    }
+  .phone-2 {
+    scale: 0.5;
+    transform: translate(-10%, 40rem) rotate(-15deg);
+  }
 
-    .light3 {
-        transform: translate(63%, 28%);
-        scale: 1.5;
-    }
+  .light3 {
+    transform: translate(63%, 28%);
+    scale: 1.5;
+  }
 }
 
-@media screen and (max-width: 1440px){
-    .middle-light1 {
-        transform: translate(10%, 20%);
-        scale: 0.9;
-    }    
+@media screen and (min-width: 1440px) {
+  .middle-light1 {
+    transform: translate(230%, 10%);
+    scale: 0.9;
+  }
 }
 
-@media screen and (max-width: 1600px){
-    .middle-light1 {
-        transform: translate(268%, 10%);
-        scale: 0.9;
-    }
-    
-    .middle-light2 {
-        transform: translate(-7%, 10%) scaleX(-1);
-        scale: 0.9;
-    }
-    
-    .phone-3 {
-        scale: 0.7;
-        transform: translate(5%, -5rem) rotate(10deg);
-    }
+@media screen and (min-width: 1600px) {
+  .middle-light1 {
+    transform: translate(268%, 10%);
+    scale: 0.9;
+  }
 
-    .phone-1 {
-        scale: 0.7;
-        transform: translate(-20%, 6rem) rotate(15deg);
-    }
+  .middle-light2 {
+    transform: translate(-7%, 10%) scaleX(-1);
+    scale: 0.9;
+  }
 
-    .phone-2 {
-        scale: 0.7;
-        transform: translate(-10%,25rem) rotate(-15deg);
-    }
+  .phone-3 {
+    scale: 0.7;
+    transform: translate(5%, -5rem) rotate(10deg);
+  }
 
-    .light3 {
-        transform: translate(75%, 28%);
-        scale: 1.5;
-    }
+  .phone-1 {
+    scale: 0.7;
+    transform: translate(-20%, 6rem) rotate(15deg);
+  }
 
-    .scroller-wrapper {
-        max-width: 80rem;
-    }
+  .phone-2 {
+    scale: 0.7;
+    transform: translate(-10%, 25rem) rotate(-15deg);
+  }
+
+  .light3 {
+    transform: translate(75%, 28%);
+    scale: 1.5;
+  }
+
+  .scroller-wrapper {
+    max-width: 80rem;
+  }
 }
 
-@media screen and (max-width: 1536px) {
-    .scroller-wrapper {
-        scale: 0.9;
-    }
+@media screen and (min-width: 1536px) {
+  .scroller-wrapper {
+    scale: 0.9;
+  }
 
-    .middle-light1 {
-        transform: translate(215%, 10%);
-        scale: 0.9;
-    }
+  .middle-light1 {
+    transform: translate(255%, 10%);
+    scale: 0.9;
+  }
 
-    .middle-light2 {
-        transform: translate(-7%, 10%) scaleX(-1);
-        scale: 0.9;
-    }
+  .middle-light2 {
+    transform: translate(-7%, 10%) scaleX(-1);
+    scale: 0.9;
+  }
 
-    .phone-3 {
-        scale: 0.7;
-        transform: translate(5%, -5rem) rotate(10deg);
-    }
+  .phone-3 {
+    scale: 0.7;
+    transform: translate(5%, -5rem) rotate(10deg);
+  }
 
-    .phone-1 {
-        scale: 0.6;
-        transform: translate(-20%, 6rem) rotate(15deg);
-    }
+  .phone-1 {
+    scale: 0.6;
+    transform: translate(-20%, 6rem) rotate(15deg);
+  }
 
-    .phone-2 {
-        scale: 0.6;
-        transform: translate(-10%, 40rem) rotate(-15deg);
-    }
+  .phone-2 {
+    scale: 0.6;
+    transform: translate(-10%, 40rem) rotate(-15deg);
+  }
 
-    .light3 {
-        transform: translate(75%, 28%);
-        scale: 1.5;
-    }
-    
+  .light3 {
+    transform: translate(75%, 28%);
+    scale: 1.5;
+  }
 }
 
-@media screen and (max-width: 2560px) {
-    .middle-light1 {
-        transform: translate(440%, 10%);
-    }
+@media screen and (min-width: 1920px) {
+  .middle-light1 {
+    transform: translate(340%, 10%);
+  }
 
-    .light3 {
-        transform: translate(145%, 28%);
-        scale: 1.5;
-    }
+  .light3 {
+    transform: translate(100%, 28%);
+  }
 
-    .phone-2 {
-        transform: translate(15%, 10rem) rotate(-15deg);
-    }
+  .phone-3 {
+    scale: 0.8;
+  }
+
+  .phone-1 {
+    scale: 0.7;
+    transform: translate(-13%, 6rem) rotate(15deg);
+  }
+
+  .phone-2 {
+    scale: 0.7;
+    transform: translate(5%, 15rem) rotate(-15deg);
+  }
 }
 
+@media screen and (min-width: 2560px) {
+  .middle-light1 {
+    transform: translate(493%, 10%);
+  }
 
+  .light3 {
+    transform: translate(100%, 28%);
+    scale: 1.5;
+  }
 
+  .phone-2 {
+    transform: translate(-10%, 10rem) rotate(-15deg);
+  }
+}
 
 /* Prize */
 .prize-title {
-    position: relative;
-    font-family: 'Inter', sans-serif;
-    font-size: 92px;
-    color: #2c2f77;
-    font-size: 5rem;
-    z-index: 1;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-size: 92px;
+  color: #2c2f77;
+  font-size: 5rem;
+  z-index: 1;
 }
 
 .prize-container {
-    margin-top: 15rem;
-    position: relative;
-    z-index: 2;
+  margin-top: 15rem;
+  position: relative;
+  z-index: 2;
 }
 
 .prize-text {
-    margin-left: 8rem;
-    margin-right: 5.125rem;
-    position: relative;
-    z-index: 3;
+  margin-left: 8rem;
+  margin-right: 5.125rem;
+  position: relative;
+  z-index: 3;
 }
 
 .prize-text .juara-1,
 .prize-text .juara-2,
 .prize-text .juara-3 {
-    z-index: 4;
+  z-index: 4;
 }
 
 .prize-text h1 {
-    text-align: center;
-    text-shadow:
-        3px 3px 0 white,
-        -3px -3px 0 white,
-        3px -3px 0 white,
-        -3px 3px 0 white,
-        3px 3px 0 white;
+  text-align: center;
+  text-shadow: 3px 3px 0 white, -3px -3px 0 white, 3px -3px 0 white,
+    -3px 3px 0 white, 3px 3px 0 white;
 }
 
 .juara-1 {
-    width: 35%;
-    height: auto;
-    transform: translateX(90%) translateY(20%);
+  width: 35%;
+  height: auto;
+  transform: translateX(90%) translateY(20%);
 }
 
 .juara-2 {
-    width: 35%;
-    height: auto;
-    transform: translateX(-200%) translateY(120%);
+  width: 35%;
+  height: auto;
+  transform: translateX(-200%) translateY(120%);
 }
 
 .juara-3 {
-    width: 35%;
-    height: auto;
-    transform: translateX(190%) translateY(20%);
+  width: 35%;
+  height: auto;
+  transform: translateX(190%) translateY(20%);
 }
 
 .tent {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    transform: translateY(-60.2%);
-    z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 0;
 }
 
 .bottom-light1 {
-    position: absolute;
-    z-index: 1;
-    transform: translate(300%, -32.15%);
+  position: absolute;
+  z-index: 1;
+  transform: translate(300%, -32.15%);
 }
 
 .bottom-light2 {
-    position: absolute;
-    z-index: 1;
-    transform: translate(0, -32.15%) scaleX(-1);
+  position: absolute;
+  z-index: 1;
+  transform: translate(0, -32.15%) scaleX(-1);
 }
 
-@media screen and (max-width: 1366px) {
-    .bottom-light1 {
-        transform: translate(205%, -50%);
-        scale: 0.95;
-    }
+@media screen and (min-width: 1366px) {
+  .bottom-light1 {
+    transform: translate(202%, -45.5%);
+    scale: 0.95;
+  }
 
-    .bottom-light2 {
-        transform: translate(-4%, -50%) scaleX(-1);
-        scale: 0.95;
-    }
+  .bottom-light2 {
+    transform: translate(-4%, -45.5%) scaleX(-1);
+    scale: 0.95;
+  }
 
-    .tent {
-        transform: translateY(-55%);
-    }
+  .tent {
+    transform: translateY(-55%);
+  }
 }
 
-@media screen and (max-width: 1440px){
-    .tent {
-        transform: translateY(-57.5%);
-    }
+@media screen and (min-width: 1440px) {
+  .tent {
+    transform: translateY(-57.5%);
+  }
+
+  .bottom-light1 {
+    transform: translate(220%, -45.5%);
+  }
+
+  .bottom-light2 {
+    transform: translate(-4%, -45.5%) scaleX(-1);
+  }
 }
 
-@media screen and (max-width: 1536px) {
-    .bottom-light1 {
-        transform: translate(205%, -45.5%);
-        scale: 0.95;
-    }
+@media screen and (min-width: 1536px) {
+  .bottom-light1 {
+    transform: translate(241%, -45.5%);
+    scale: 0.95;
+  }
 
-    .bottom-light2 {
-        transform: translate(-4%, -45.5%) scaleX(-1);
-        scale: 0.95;
-    }
-    
+  .bottom-light2 {
+    transform: translate(-4%, -45.5%) scaleX(-1);
+    scale: 0.95;
+  }
+
+  .tent {
+    transform: translateY(-60%);
+  }
 }
 
-@media screen and (max-width: 1600px) {
-    .bottom-light1 {
-        transform: translate(256%, -43.5%);
-        scale: 0.95;
-    }
+@media screen and (min-width: 1600px) {
+  .bottom-light1 {
+    transform: translate(256%, -43.5%);
+    scale: 0.95;
+  }
 
-    .bottom-light2 {
-        transform: translate(-4%, -43.5%) scaleX(-1);
-        scale: 0.95;
-    }    
+  .bottom-light2 {
+    transform: translate(-4%, -43.5%) scaleX(-1);
+    scale: 0.95;
+  }
 }
 
-@media screen and (max-width: 2560px) {
-    .tent {
-        scale: 0.8;
-        transform: translateY(-75.5%);
-    }
-    
-    .bottom-light1 {
-        transform: translate(440%, -32.35%);
-    }
+@media screen and (min-width: 1920px) {
+  .tent {
+    transform: translateY(-66.5%);
+  }
 
-    .bottom-light2 {
-        transform: translate(0, -32.35%) scaleX(-1);
-    }
+  .bottom-light1 {
+    transform: translate(325%, -43.4%);
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .tent {
+    transform: translateY(-69%);
+  }
+
+  .bottom-light1 {
+    transform: translate(355%, -43.4%);
+  }
+
+  .bottom-light2 {
+    transform: translate(0, -50.4%) scaleX(-1);
+  }
 }
