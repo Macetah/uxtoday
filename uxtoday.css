@@ -56,6 +56,12 @@ hr {
   }
 }
 
+@media screen and (min-width: 4096px) {
+  .hero-container {
+    padding-bottom: 47.7rem;
+  }
+}
+
 /* Title */
 
 .title-container {
@@ -87,6 +93,26 @@ hr {
   pointer-events: none;
   text-shadow: 0;
 }
+
+.fixed-title-alt {
+    position: relative;
+    font-family: "Arial", sans-serif;
+    font-size: 92px;
+    color: #2c2f77;
+    -webkit-text-stroke: 3px white;
+    text-shadow: 0 0 0;
+  }
+  
+  .fixed-title-alt::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #2c2f77;
+    -webkit-text-stroke: 0;
+    pointer-events: none;
+    text-shadow: 0;
+  }
 
 .title-container p,
 h2,
@@ -214,16 +240,52 @@ h3 {
 
 @media screen and (min-width: 2560px) {
   .image-container {
-    scale: 0.8;
+    scale: 0.7;
     margin-top: 4rem;
   }
 
   .title-text {
-    margin-top: 15rem;
+    margin-top: 25rem;
+  }
+
+  .title-text p, h3 {
+    font-size: 1.5rem;
+  }
+
+  .title-text h2 {
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (min-width: 4096px) {
+    .image-container {
+        scale: 1.5;
+        margin-top: 30rem;
+    }
+    
+    .title-text {
+        margin-top: 30rem;
+        margin-left: 70rem;
+    }
+    
+    .fixed-title {
+        margin-left: 52.6rem;
+        margin-bottom: 3rem;
+        scale: 2;
+    }
+
+    .title-text p, h3 {
+        font-size: 3rem;
+    }
+    
+    .title-text h2 {
+        font-size: 4em;
+    }
+
+    .custom-button {
+        width: auto;
+        font-size: 2rem;
+    }
 }
 
 /* Timeline */
@@ -565,14 +627,69 @@ h3 {
   }
 
   .light3 {
-    transform: translate(100%, 28%);
+    transform: translate(145%, 28%);
     scale: 1.5;
   }
 
+  .phone-1 {
+    scale: 0.9;
+    transform: translate(0%, 15rem) rotate(15deg);
+  }
+
   .phone-2 {
-    transform: translate(-10%, 10rem) rotate(-15deg);
+    transform: translate(20%, 10rem) rotate(-15deg);
+    scale: 0.9;
+  }
+
+  .phone-3 {
+    scale: 0.9;
+    transform: translate(0%, -4rem) rotate(10deg);
   }
 }
+
+@media screen and (min-width: 4096px) {    
+    .timeline-container {
+        margin-top: 45rem;
+        scale: 2;
+    }
+
+    .timeline-container > .fixed-title {
+        scale: 2;
+        margin: 0;
+    }
+    
+    .middle-light1 {
+        transform: translate(355%, 30%);
+        scale: 2;
+    }
+
+    .middle-light2 {
+        transform: translate(24%, 30%) scaleX(-1);
+        scale: 2;
+    }
+    
+    .light3 {
+        transform: translate(190%, 70%);
+        scale: 2;
+    }
+    
+    .phone-1 {
+        scale: 1.5;
+        transform: translate(20%, 40rem) rotate(15deg);
+    }
+    
+    .phone-2 {
+        transform: translate(30%, 15rem) rotate(-15deg);
+        scale: 1.5;
+    }
+    
+    .phone-3 {
+        scale: 1;
+        transform: translate(0%, -4rem) rotate(10deg);
+    }
+    
+}
+
 
 /* Prize */
 .prize-title {
@@ -692,21 +809,21 @@ h3 {
   }
 }
 
-@media screen and (min-width: 1600px) {
-  .bottom-light1 {
-    transform: translate(256%, -43.5%);
+@media screen and (min-width: 1600px) {  
+    .bottom-light1 {
+    transform: translate(256%, -43%);
     scale: 0.95;
   }
 
   .bottom-light2 {
-    transform: translate(-4%, -43.5%) scaleX(-1);
+    transform: translate(-4%, -43%) scaleX(-1);
     scale: 0.95;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .tent {
-    transform: translateY(-66.5%);
+    transform: translateY(-67%);
   }
 
   .bottom-light1 {
@@ -720,10 +837,39 @@ h3 {
   }
 
   .bottom-light1 {
-    transform: translate(355%, -43.4%);
+    transform: translate(465%, -29%);
   }
 
   .bottom-light2 {
-    transform: translate(0, -50.4%) scaleX(-1);
+    transform: translate(0, -29%) scaleX(-1);
   }
+}
+
+@media screen and (min-width: 4096px) {
+    .prize-text {
+        margin-top: 50rem;
+    }
+
+    .juara-2 {
+        transform: translateX(-190%) translateY(120%);
+    }
+    
+    .prize-title {
+        scale: 2;
+    }
+
+    .tent {
+        transform: translateY(-69%);
+    }
+    
+    .bottom-light1 {
+        scale: 2;
+        transform: translate(360%, -19%);
+    }
+    
+    .bottom-light2 {
+        scale:2 ;
+        transform: translate(25%, -19%) scaleX(-1);
+    }
+    
 }
