@@ -63,7 +63,6 @@ hr {
 }
 
 /* Title */
-
 .title-container {
   padding: 1.25rem;
   color: #2d3250;
@@ -72,6 +71,35 @@ hr {
   margin-bottom: 5rem;
   padding: 0;
   display: flex;
+}
+
+.qr-code-container {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 2rem;
+  padding: 0;
+  width: 20rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  background-color: #1d2243;
+  border-radius: 25px;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.qr-code {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 10px;
+}
+
+.qr-code-container p {
+  font-size: 2rem;
 }
 
 .fixed-title {
